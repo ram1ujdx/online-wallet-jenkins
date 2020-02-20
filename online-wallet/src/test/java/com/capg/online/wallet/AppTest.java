@@ -47,14 +47,14 @@ public class AppTest
 	
 	
 	//Checking For Invaild Amount Exception
-	@Nested
-	class CheckExceptions{
+//	@Nested
+//	class CheckExceptions{
 	@Test
 	public void testInvaildAmountException() {
 		assertThrows(InvaildAmountException.class, ()->{
 			service.addAmount(1001125256,-50000);
 		});
 	}
-	}
+	
 	
 }
